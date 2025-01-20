@@ -3,10 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { Tarefa } from '../../models/Tarefas';
 import { error } from 'console';
 import { TaskService } from '../../services/task.service';
+import { TasksItemComponent } from '../tasks-item/tasks-item.component';
 
 @Component({
   selector: 'app-tasks',
-  imports: [CommonModule],
+  imports: [CommonModule, TasksItemComponent],
   templateUrl: './tasks.component.html',
   styleUrl: './tasks.component.css'
 })

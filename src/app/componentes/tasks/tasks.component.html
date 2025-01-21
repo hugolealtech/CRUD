@@ -1,7 +1,10 @@
 
 
 @for (tarefa of tarefas; track tarefa){
-    <app-tasks-item [tarefa]="tarefa" (onDeleteTask)="deleteTask($event)"></app-tasks-item>
+    <app-tasks-item [tarefa]="tarefa" 
+    (onDeleteTask)="deleteTask($event)">
+    (onToggleConcluido)="onToggleConcluido($event)"
+    </app-tasks-item>
 }
 @empty {
     <p>Não há tarefas!</p>

@@ -15,12 +15,17 @@ export class TasksItemComponent {
 
   @Input() tarefa!:Tarefa;
   @Output() onDeleteTask = new EventEmitter<Tarefa>();
+  @Output() OnToggleConcluido = new EventEmitter<Tarefa>();
 
 
   faTimes = faTimes
 
   onDelete(tarefa: Tarefa){
     this.onDeleteTask.emit(tarefa);
+  }
+
+  onToggle(tarefa: Tarefa){
+    this.OnToggleConcluido.emit(tarefa);
   }
 
 }

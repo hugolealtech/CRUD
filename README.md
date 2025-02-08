@@ -1,62 +1,69 @@
-CRUD-ANGULAR-19
-This project was generated using Angular CLI version 19.0.0.
 
-Development server
-To start a local development server, run:
-
-bash
 Copy
-ng serve
-Once the server is running, open your browser and navigate to http://localhost:4200/. The application will automatically reload whenever you modify any of the source files.
+# CRUD-ANGULAR-19
 
-Running the JSON Server
-To simulate a REST API for CRUD operations, this project uses json-server. To start the JSON server, run the following command:
+Este projeto foi gerado usando [Angular CLI](https://github.com/angular/angular-cli) versão 19.0.0.
+
+## Servidor de desenvolvimento
+
+Para iniciar um servidor de desenvolvimento local, execute:
+
+```bash
+ng serve
+Após o servidor estar em execução, abra seu navegador e acesse http://localhost:4200/. A aplicação será recarregada automaticamente sempre que você modificar qualquer arquivo de código.
+
+Executando o JSON Server
+Para simular uma API REST para operações CRUD, este projeto utiliza o json-server. Para iniciar o JSON Server, execute o seguinte comando:
 
 bash
 Copy
 npm run json-server db.json
-This will start the JSON server on http://localhost:3000 and use the db.json file as the database. Make sure you have json-server installed globally or as a dependency in your project.
+Isso iniciará o JSON Server em http://localhost:3000 e usará o arquivo db.json como banco de dados. Certifique-se de que o json-server está instalado globalmente ou como uma dependência no seu projeto.
 
-Code scaffolding
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Gerando componentes
+O Angular CLI inclui ferramentas poderosas para gerar código. Para criar um novo componente, execute:
 
 bash
 Copy
-ng generate component component-name
-For a complete list of available schematics (such as components, directives, or pipes), run:
+ng generate component nome-do-componente
+Para ver uma lista completa de schematics disponíveis (como components, directives ou pipes), execute:
 
 bash
 Copy
 ng generate --help
-Building
-To build the project run:
+Build do projeto
+Para compilar o projeto, execute:
 
 bash
 Copy
 ng build
-This will compile your project and store the build artifacts in the dist/ directory. By default, the production build optimizes your application for performance and speed.
+Isso irá compilar seu projeto e armazenar os arquivos gerados na pasta dist/. Por padrão, o build de produção é otimizado para desempenho e velocidade.
 
-Running unit tests
-To execute unit tests with the Karma test runner, use the following command:
+Executando testes unitários
+Para executar testes unitários com o test runner Karma, use o seguinte comando:
 
 bash
 Copy
 ng test
-Running end-to-end tests
-For end-to-end (e2e) testing, run:
+Executando testes end-to-end
+Para testes end-to-end (e2e), execute:
 
 bash
 Copy
 ng e2e
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+O Angular CLI não inclui um framework de testes end-to-end por padrão. Você pode escolher um que atenda às suas necessidades.
 
-Additional Resources
-For more information on using the Angular CLI, including detailed command references, visit the Angular CLI Overview and Command Reference page.
+Recursos adicionais
+Para mais informações sobre como usar o Angular CLI, incluindo referências detalhadas de comandos, visite a página Angular CLI Overview and Command Reference.
 
-Notes:
-Ensure that json-server is installed in your project. If not, you can install it using:
+Observações:
+Certifique-se de que o json-server está instalado no seu projeto. Caso não esteja, você pode instalá-lo usando:
 
 bash
 Copy
 npm install -g json-server
-The db.json file should be located in the root directory of your project. If it's located elsewhere, adjust the path in the command accordingly.
+O arquivo db.json deve estar localizado na raiz do seu projeto. Se estiver em outro local, ajuste o caminho no comando conforme necessário.
+
+Copy
+
+Salve este conteúdo em um arquivo `.txt` (por exemplo, `README.txt`) e adicione ao seu repositório no GitHub.

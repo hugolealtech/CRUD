@@ -4,9 +4,14 @@ import { HeaderComponent } from './componentes/header/header.component';
 import { TasksComponent } from './componentes/tasks/tasks.component';
 import { TasksItemComponent } from './componentes/tasks-item/tasks-item.component';
 
+import { ButtonComponent } from './componentes/button/button.component';
+import { AddTasksComponent } from './componentes/add-tasks/add-tasks.component';
+
+
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent,TasksComponent,TasksItemComponent],
+  imports: [RouterOutlet, HeaderComponent,TasksComponent,TasksItemComponent, AddTasksComponent,ButtonComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

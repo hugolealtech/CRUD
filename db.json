@@ -1,27 +1,9 @@
 {
   "Tasks": [
     {
-      "id": "1",
-      "tarefa": "Estudar SQL",
-      "categoria": "Curso",
-      "concluido": false
-    },
-    {
-      "id": "2",
-      "tarefa": "Estudar Django",
-      "categoria": "Curso",
-      "concluido": false
-    },
-    {
-      "id": "3",
-      "tarefa": "Estudar Django",
-      "categoria": "Curso",
-      "concluido": false
-    },
-    {
-      "id": "5",
-      "tarefa": "Estudar Django",
-      "categoria": "Curso",
+      "id": "dfb4",
+      "tarefa": "Andar de bicicleta",
+      "categoria": "casa",
       "concluido": true
     }
   ]

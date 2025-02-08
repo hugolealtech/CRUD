@@ -1,5 +1,5 @@
 
-
+<app-add-tasks (onAddTask)="addTask($event)"></app-add-tasks>
 @for (tarefa of tarefas; track tarefa){
     <app-tasks-item [tarefa]="tarefa" 
     (onDeleteTask)="deleteTask($event)"

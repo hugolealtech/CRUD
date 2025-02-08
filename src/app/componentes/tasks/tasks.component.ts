@@ -3,10 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { Tarefa } from '../../models/Tarefas';
 import { TaskService } from '../../services/task.service';
 import { TasksItemComponent } from '../tasks-item/tasks-item.component';
+import { AddTasksComponent } from '../add-tasks/add-tasks.component';
+
 
 @Component({
   selector: 'app-tasks',
-  imports: [CommonModule, TasksItemComponent],
+  imports: [CommonModule, TasksItemComponent, AddTasksComponent],
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']  // Corrigido de "styleUrl" para "styleUrls"
 })
@@ -45,5 +47,18 @@ export class TasksComponent implements OnInit {
    toggleConcluido(tarefa: Tarefa){
     tarefa.concluido = !tarefa.concluido;
     this.taskService.updateTask(tarefa).subscribe({});
+   }
+
+   addTask(tarefa:Tarefa){
+    this.taskService.addTask(tarefa).subscribe({
+      next: (tarefa) => {
+        this.tarefas.push(tarefa);
+        alert('Tarefa Adicionada com Sucesso!');
+      },
+      error: (err) =>{
+        console.error('Erro ao deletar a tarefa: ',err);
+        alert('Ocorreu um erro ao adicionar a tarefa. Tente novamente.');
+      }
+    });
    }
 }
